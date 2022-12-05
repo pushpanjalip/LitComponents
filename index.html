@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Lit + TS</title>
     <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/my-element.ts"></script>
+    <script type="module" src="/src/Button/custom-button.ts"></script>
   </head>
   <body>
-    <my-element>
-      <h1>Vite + Lit</h1>
-    </my-element>
+    <div>
+      <custom-button text="Submit" type="primary">Primary</custom-button>
+    </div>
+
+    <div>
+      <custom-button text="Submit" type="secondary">Secondary</custom-button>
+    </div>
+    <div>
+      <custom-button text="Submit" type="error">Error</custom-button>
+    </div>
   </body>
 </html>
